@@ -1,0 +1,56 @@
+What's django-newproject?
+-------------------------
+
+django-newproject is a skeleton to quickly start a new Django project.
+
+
+Instructions
+------------
+
+First, install these requirements:
+
+    * `Git`_ 
+    * `Fabric`_
+    * `Virtualenv`_ 
+    * `Virtualenvwrapper`_
+
+Clone the project::
+
+    $ git clone git://github.com/gillesfabio/django-newproject.git
+
+Launch ``newproject`` Fabric task::
+
+    $ cd django-newproject
+    $ fab newproject
+
+Enter the project's absolute path. For example: ``/Users/jdoe/Desktop/myproject``.
+    
+Go in the project directory and activate the virtualenv::
+
+    $ cd /path/to/your/project
+    $ workon yourproject 
+
+The default configuration uses ``sqlite3`` database backend. The database file
+is stored in ``db/development.sqlite``. 
+
+If this does not suit your needs, edit ``settings_local.py``. 
+
+Edit these files as necessary:
+
+    * ``settings.py``
+    * ``urls.py``
+    * ``REQUIREMENTS``
+    * ``templates/layout/base.html``
+
+Then, synchronize the database and run the server::
+
+    $ python manage.py syncdb
+    $ python manage.py runserver
+
+That's all. Have fun!
+
+
+.. _Git: http://git-scm.org/
+.. _Fabric: http://fabfile.org/
+.. _Virtualenv: http://pypi.python.org/pypi/virtualenv
+.. _Virtualenvwrapper: http://pypi.python.org/pypi/virtualenvwrapper

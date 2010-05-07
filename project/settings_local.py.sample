@@ -1,0 +1,20 @@
+from settings import *
+    
+# Databases
+# -----------------------------------------------------------------------------
+DB_DIR = os.path.join(PROJECT_ROOT, 'db')
+if not os.path.exists(DB_DIR): 
+    os.makedirs(DB_DIR)
+
+DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
+DATABASES['default']['NAME'] = project_path('db', 'development.sqlite')
+
+# Caching
+# -----------------------------------------------------------------------------
+CACHE_BACKEND = 'dummy://'
+CACHE_MIDDLEWARE_KEY_PREFIX += 'dev_'
+
+# Email
+# -----------------------------------------------------------------------------
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025

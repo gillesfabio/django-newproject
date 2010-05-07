@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %} - PROJECT</title>    
+        
+        {% block css %}
+        <link rel="stylesheet" type="text/css" media="screen, projection" href="{{ MEDIA_URL }}css/html5_reset.css" />
+        <link rel="stylesheet" type="text/css" media="screen, projection" href="{{ MEDIA_URL }}css/main.css" />
+        {% endblock %}
+        
+        <!--[if lte IE 8]>
+        <script src="{{ MEDIA_URL }}js/html5.js" type="text/javascript"></script>
+        <![endif]-->
+
+        {% block extrahead %}{% endblock %}
+    
+    </head>
+    <body>
+    {% block body %}        
+        
+        <div id="main">
+        {% block main %}
+            
+            <header>
+            {% block header %}
+                <h1>
+                    {% block header_title %}
+                    <a href="{% url home %}">PROJECT HOME</a>
+                    {% endblock %}
+                </h1>
+            {% endblock %}
+            </header>
+            
+            <div id="content">
+            {% block content %}{% endblock %}
+            </div>
+        
+            <footer>
+            {% block footer %}
+                <p>Copyright &copy; PROJECT</p>
+            {% endblock %}
+            </footer>
+        
+        {% endblock %}
+        </div>
+        
+        {% block js %}
+        <script src="{{ MEDIA_URL }}js/jquery-1.4.2.min.js"></script>
+        {% endblock %}
+        
+    {% endblock %}
+    </body>
+</html>
