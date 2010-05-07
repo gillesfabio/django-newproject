@@ -27,9 +27,9 @@ def setup_virtualenv(copy_dir):
     if copy_dir.endswith('/'): copy_dir = copy_dir[:-1]
     head, tail = os.path.split(copy_dir)
     local('cd %s' % copy_dir, capture=False)
-    local('pip install -E %s -r %s/REQUIREMENTS' % (tail, copy_dir), capture=False)    
+    local('pip install -E %s -r %s/requirements.txt' % (tail, copy_dir), capture=False)    
 
 
 def rename_settings_local(copy_dir):
     local('cd %s' % copy_dir, capture=False)
-    local('mv %s/settings_local.py.sample %s/settings_local.py' % (copy_dir, copy_dir), capture=False)
+    local('mv %s/settings_local.dev.py.sample %s/settings_local.py' % (copy_dir, copy_dir), capture=False)
