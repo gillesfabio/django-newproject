@@ -1,7 +1,7 @@
-What's django-newproject?
--------------------------
+Introduction
+------------
 
-django-newproject is a skeleton to quickly start a new Django project.
+Skeleton setup to quickly start a `Django`_ project.
 
 
 Instructions
@@ -13,7 +13,7 @@ First, install these requirements:
     * `Fabric`_
     * `Virtualenv`_ 
     * `Virtualenvwrapper`_
-
+    
 Clone the project::
 
     $ git clone git://github.com/gillesfabio/django-newproject.git
@@ -25,7 +25,7 @@ Launch ``newproject`` Fabric task::
 
 Enter the project's absolute path. For example: ``/Users/jdoe/Desktop/myproject``.
     
-Go in the project directory and activate the virtualenv::
+Go in the project's directory and active the virtualenv::
 
     $ cd /path/to/your/project
     $ workon yourproject 
@@ -49,7 +49,7 @@ Then, synchronize the database and run the server::
 
 That's all. Have fun!
 
-
+.. _Django: http://djangoproject.com/
 .. _Git: http://git-scm.org/
 .. _Fabric: http://fabfile.org/
 .. _Virtualenv: http://pypi.python.org/pypi/virtualenv
