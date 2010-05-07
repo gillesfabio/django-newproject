@@ -14,8 +14,8 @@ def check_copy_dir(copy_dir):
     if os.path.exists(copy_dir):
         abort("Directory '%s' already exists." % copy_dir)
     head, tail = os.path.split(copy_dir)
-    if not os.path.exists(head):        
-        abort("Directory '%s' does not exist. Please, check it again." % heade)
+    if not os.path.exists(head):
+        abort("Directory '%s' does not exist. Please, check it again." % head)
 
 
 def copy_skeleton(copy_dir):
