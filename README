@@ -11,6 +11,7 @@ First, install these requirements:
 
     * `Git`_ 
     * `Fabric`_
+    * `pip`_
     * `Virtualenv`_ 
     * `Virtualenvwrapper`_
     
@@ -52,5 +53,6 @@ That's all. Have fun!
 .. _Django: http://djangoproject.com/
 .. _Git: http://git-scm.org/
 .. _Fabric: http://fabfile.org/
+.. _pip: http://pypi.python.org/pypi/pip
 .. _Virtualenv: http://pypi.python.org/pypi/virtualenv
 .. _Virtualenvwrapper: http://pypi.python.org/pypi/virtualenvwrapper
