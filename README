@@ -40,7 +40,8 @@ Edit these files as necessary:
 
     * ``settings.py``
     * ``urls.py``
-    * ``REQUIREMENTS``
+    * ``requirements-prod.txt``
+    * ``requirements.txt``
     * ``templates/layout/base.html``
 
 Then, synchronize the database and run the server::
