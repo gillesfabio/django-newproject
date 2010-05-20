@@ -30,16 +30,16 @@ DEBUG_TOOLBAR_PANELS = (
 
 # django-devserver
 # -----------------------------------------------------------------------------
-INSTALLED_APPS += ('devserver',)
-MIDDLEWARE_CLASSES += ('devserver.middleware.DevServerMiddleware',)
-DEVSERVER_MODULES = (
-    'devserver.modules.sql.SQLRealTimeModule',
-    'devserver.modules.sql.SQLSummaryModule',
-    'devserver.modules.profile.ProfileSummaryModule',
-    'devserver.modules.ajax.AjaxDumpModule',
-    'devserver.modules.profile.MemoryUseModule',
-    'devserver.modules.cache.CacheSummaryModule',
-)
+#INSTALLED_APPS += ('devserver',)
+#MIDDLEWARE_CLASSES += ('devserver.middleware.DevServerMiddleware',)
+#DEVSERVER_MODULES = (
+#    'devserver.modules.sql.SQLRealTimeModule',
+#    'devserver.modules.sql.SQLSummaryModule',
+#    'devserver.modules.profile.ProfileSummaryModule',
+#    'devserver.modules.ajax.AjaxDumpModule',
+#    'devserver.modules.profile.MemoryUseModule',
+#    'devserver.modules.cache.CacheSummaryModule',
+#)
 
 # Caching
 # -----------------------------------------------------------------------------

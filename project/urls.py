@@ -14,7 +14,6 @@ urlpatterns = patterns('',
     )
 )
 
-
 # django.contrib.admin
 # -----------------------------------------------------------------------------
 if 'django.contrib.admin' in settings.INSTALLED_APPS:
@@ -31,7 +30,6 @@ if 'django.contrib.admin' in settings.INSTALLED_APPS:
             include(admin.site.urls)
         )
     )
-
 
 # Static files
 # -----------------------------------------------------------------------------

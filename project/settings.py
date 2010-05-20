@@ -39,7 +39,7 @@ DATABASES = {
 # I18N - L10N
 # -----------------------------------------------------------------------------
 TIME_ZONE = 'Europe/Paris'
-LANGUAGE_CODE = 'fr-fr'
+LANGUAGE_CODE = 'en-us'
 USE_I18N = True
 USE_L10N = True
 

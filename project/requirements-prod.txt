@@ -1,2 +1,3 @@
 PIL
--e svn+http://code.djangoproject.com/svn/django/trunk#egg=Django
+Django
+#-e svn+http://code.djangoproject.com/svn/django/trunk#egg=Django
