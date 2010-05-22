@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8
 """
 Project's settings.
 """
@@ -56,11 +56,6 @@ SITE_ID = 1
 MEDIA_ROOT = project_path('public', 'media')
 MEDIA_URL = '/media/'
 
-# Admin media
-# -----------------------------------------------------------------------------
-ADMIN_MEDIA_ROOT = django_path('contrib', 'admin', 'media')
-ADMIN_MEDIA_PREFIX = '/media/admin/'
-
 # Secret Key
 # -----------------------------------------------------------------------------
 SECRET_KEY = 'MUST-BE-SECRET'
@@ -73,11 +68,9 @@ TEMPLATE_LOADERS = (
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
-    "django.contrib.messages.context_processors.messages",
 )
 
 TEMPLATE_DIRS = (
@@ -88,10 +81,7 @@ TEMPLATE_DIRS = (
 # -----------------------------------------------------------------------------
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
 )
 
 # URLs
@@ -103,23 +93,9 @@ ROOT_URLCONF = '%s.urls' % PROJECT_NAME
 CACHE_MIDDLEWARE_SECONDS = 5
 CACHE_MIDDLEWARE_KEY_PREFIX = '%s_' % PROJECT_NAME
 
-# Sessions
-# -----------------------------------------------------------------------------
-SESSION_EXPIRE_AT_BROWSER_CLOSE = False
-
 # Applications
 # -----------------------------------------------------------------------------
 INSTALLED_APPS = (
-    # Django
-    'django.contrib.admin',
-    'django.contrib.admindocs',
-    'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.messages',
-    'django.contrib.sessions',
     'django.contrib.sites',
-    
-    # External apps
-    'django_extensions',
 )
-

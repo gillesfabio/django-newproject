@@ -1,0 +1,11 @@
+from settings import *
+
+# Caching
+# -----------------------------------------------------------------------------
+CACHE_BACKEND = 'dummy://'
+CACHE_MIDDLEWARE_KEY_PREFIX += 'dev_'
+
+# Email
+# -----------------------------------------------------------------------------
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025

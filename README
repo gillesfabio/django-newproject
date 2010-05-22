@@ -4,12 +4,13 @@ Introduction
 Skeleton setup to quickly start a `Django`_ project.
 
 
-Instructions
+Installation
 ------------
 
-First, install these requirements:
+Install requirements:
 
     * `Git`_ 
+    * `Subversion`_
     * `Fabric`_
     * `pip`_
     * `Virtualenv`_ 
@@ -19,20 +20,31 @@ Clone the project::
 
     $ git clone git://github.com/gillesfabio/django-newproject.git
 
+This will create ``django-newproject`` directory in your current directory.
+
+
+Create a project
+----------------
+
 Launch ``newproject`` Fabric task::
 
     $ cd django-newproject
     $ fab newproject
 
-Enter the project's absolute path. For example: ``/Users/jdoe/Desktop/myproject``.
+The script will ask you some questions.
     
 Go in the project's directory and active the virtualenv::
 
     $ cd /path/to/your/project
     $ workon yourproject 
 
-The default configuration uses ``sqlite3`` database backend. The database file
-is stored in ``db/development.sqlite``. 
+
+Customization
+-------------
+
+The default configuration for a "standard" Django project (not a Google App
+Engine one) uses ``sqlite3`` database backend. The database file
+is stored in ``db/development.sqlite``.
 
 If this does not suit your needs, edit ``settings_local.py``. 
 
@@ -51,8 +63,10 @@ Then, synchronize the database and run the server::
 
 That's all. Have fun!
 
+
 .. _Django: http://djangoproject.com/
 .. _Git: http://git-scm.org/
+.. _Subversion: http://subversion.tigris.org/
 .. _Fabric: http://fabfile.org/
 .. _pip: http://pypi.python.org/pypi/pip
 .. _Virtualenv: http://pypi.python.org/pypi/virtualenv

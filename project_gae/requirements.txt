@@ -1,0 +1,7 @@
+-r requirements-prod.txt
+
+Fabric==0.9.0
+ipython==0.10
+nose==0.11.1
+pep8==0.5
+pylint
