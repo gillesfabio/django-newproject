@@ -4,7 +4,6 @@ Fabric commands of ``django-newproject`` project.
 """
 import fileinput
 import os
-import subprocess
 import sys
 
 from fabric import operations as fabric_op
